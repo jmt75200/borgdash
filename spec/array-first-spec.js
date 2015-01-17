@@ -24,7 +24,7 @@ describe("borgArray", function() {
     var result2 = borgArray.first(test_array, 2);
     expect( result2 ).toEqual( ["fish","dog"] );
 
-    var result3 = borgArray.first(test_array, 4);
+    var result3 = borgArray.first(test_array, 5);
     expect( result3 ).toEqual( ["fish","dog","taku","panda","unicorn"] );
     
   });
