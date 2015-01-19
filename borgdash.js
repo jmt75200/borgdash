@@ -32,7 +32,17 @@ module.exports = {
   maxx : function (squirl){
     return Math.max.apply( null, squirl );
 
-  }
+  },
+
+// Min (Array) //
+  
+  mini : function (squirl){
+    return Math.min.apply( null,squirl );
+  },
+
+// Intersection //
+
+  
   
 
 };//end of module exports

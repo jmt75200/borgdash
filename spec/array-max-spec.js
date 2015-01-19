@@ -2,7 +2,7 @@ var maxArray = require('../borgdash.js');
 
 describe("maxArray", function() {
   
-  it("Must have a function named Max()", function(){
+  it("Must have a function named maxx()", function(){
 
     expect( maxArray.maxx ).toBeDefined();
 
