@@ -1,17 +1,17 @@
-var maxArray = require('../borgdash.js');
+var borgdash = require('../borgdash.js');
 
-describe("maxArray", function() {
+describe("borgdash", function() {
   
   it("Must have a function named maxx()", function(){
 
-    expect( maxArray.maxx ).toBeDefined();
+    expect( borgdash.maxx ).toBeDefined();
 
   });//first it :: checks for max function ::
 
   it("Retrieves the maximum value of a collection.", function() {
     var test_array = [2,6,7,9];
 
-    var result = maxArray.maxx(test_array);
+    var result = borgdash.maxx(test_array);
     expect( result ).toBe(9);
 
 
@@ -20,7 +20,7 @@ describe("maxArray", function() {
   it("If the collection is empty or falsey -Infinity is returned.", function() {
     var test_array = null;
 
-    var result2 = maxArray.maxx(test_array);
+    var result2 = borgdash.maxx(test_array);
     expect( result2 ).toBe(-Infinity);
      
 

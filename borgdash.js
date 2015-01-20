@@ -42,7 +42,26 @@ module.exports = {
 
 // Intersection //
 
-  
+  matrix : function (b, c){
+    //creating a new array
+    var a = {};
+
+    var results = [];
+
+    //sort within array to compare each value within each array
+    for (var i = 0; i < c.length; i++) {
+        a[c[i]] = true;
+      }
+    
+
+    for (var j = 0; j < b.length; j++) {
+        if (a[b[j]])
+          results.push(b[j]);
+    }
+
+    return results;
+
+  }
   
 
 };//end of module exports

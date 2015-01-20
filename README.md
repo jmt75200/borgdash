@@ -31,3 +31,14 @@
 
 
 /*-------[ Intersection ]----*/
+//Description:
+//Creates an array of unique values present in all provided arrays using strict equality for comparisons
+
+//* array (b,c): The arrays to query.
+
+
+/*----------[Difference]------*/
+//Description:
+//Creates an array excluding all values of the provided arrays using strict equality for comparisons
+
+//*array (a,b): the arrays to query
