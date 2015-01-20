@@ -41,4 +41,19 @@
 //Description:
 //Creates an array excluding all values of the provided arrays using strict equality for comparisons
 
-//*array (a,b): the arrays to query
+//* array (a,b): the arrays to query
+
+
+
+/*---------[Unique Array]-----*/
+//Description:
+//Creates a duplicate-value-free version of an array using strict equality for comparisons.
+
+//* array (squirl): the array to query
+
+/*---------[Contain]----------*/
+//Description:
+//Checks if a given value is present in a collection using strict equality for comparisons
+
+//* array (squirl, n): the array to query
+

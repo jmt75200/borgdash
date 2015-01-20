@@ -64,6 +64,8 @@ module.exports = {
 
   },//ends matrix - intersection
 
+// Difference //
+
   differ : function(a, b){
     //set new array
     var c = [];
@@ -93,6 +95,8 @@ module.exports = {
 
   },//ends differ
 
+// Unique //
+
   uni : function( squirl ){
     
     //new array to return
@@ -102,10 +106,21 @@ module.exports = {
     });
 
     return newSquirl;
-  }
+  },
 
+// Contain //
 
-  
+  contain : function( squirl, n ){
+
+    var i = squirl.length;
+
+    while (i--){
+      if (squirl[i] === n) {
+        return true;
+        }
+      }
+        return false;
+      
+} 
 
 };//end of module exports
-
