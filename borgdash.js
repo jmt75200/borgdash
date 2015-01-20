@@ -91,7 +91,20 @@ module.exports = {
 
     return diff;
 
-  }//ends differ
+  },//ends differ
+
+  uni : function( squirl ){
+    
+    //new array to return
+    //filter each value in the array
+    var newSquirl  = squirl.filter(function(curr, index, array){
+      return array.indexOf(curr) == index;
+    });
+
+    return newSquirl;
+  }
+
+
   
 
 };//end of module exports
