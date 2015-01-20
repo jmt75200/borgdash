@@ -48,20 +48,50 @@ module.exports = {
 
     var results = [];
 
-    //sort within array to compare each value within each array
+    //loop through arrays 
     for (var i = 0; i < c.length; i++) {
         a[c[i]] = true;
       }
     
-
+    //loop through array1 and compare each value within each array
     for (var j = 0; j < b.length; j++) {
         if (a[b[j]])
+          //push same values into new array
           results.push(b[j]);
     }
 
     return results;
 
-  }
+  },//ends matrix - intersection
+
+  differ : function(a, b){
+    //set new array
+    var c = [];
+    var diff = [];
+
+    //loop through arrays
+    for (var i = 0; i < a.length; i++) {
+       c[a[i]] = true;
+
+    }//ends first for loop
+
+    //loops through array b and deletes anything that is duplicated
+    for (var j = 0; j < b.length; j++) {
+       if (c[b[j]]){ 
+          delete c[b[j]];
+        }else{ 
+          c[b[j]] = true;
+        }
+      }//ends second for loop
+
+    //adds values that are not duplicated into a new array  
+    for (var m in c){
+      diff.push(Number(m));
+    }
+
+    return diff;
+
+  }//ends differ
   
 
 };//end of module exports
