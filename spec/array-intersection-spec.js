@@ -2,9 +2,9 @@ var borgdash = require('../borgdash.js');
 
 describe("borgdash", function() {
   
-  it("Must have matrix() function", function() {
+  it("Must have intersection() function", function() {
     
-    expect( borgdash.matrix ).toBeDefined();
+    expect( borgdash.intersection ).toBeDefined();
 
   });
 
@@ -13,7 +13,7 @@ describe("borgdash", function() {
     var array1 =["apple", "cherry", "kiwi", "pear"];
     var array2 =["apple", "banna", "peach"];
 
-    var result = borgdash.matrix(array1, array2);
+    var result = borgdash.intersection(array1, array2);
     expect( result ).toEqual(["apple"]);
 
   });
