@@ -2,6 +2,7 @@
 /*----| BorgDash TDD |----*/
 /*------------------------*/
 
+=) not so fun array fun
 
 /*-----[First Array Spec]-----*/
 // Description: 
